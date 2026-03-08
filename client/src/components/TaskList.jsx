@@ -4,7 +4,7 @@ function TaskList({ tasks, refresh }) {
 
   const toggleComplete = async (task) => {
 
-    await fetch(`http://localhost:3000/tasks/${task.id}`, {
+    await fetch(`https://task-manager-ai-assignment-0kdz.onrender.com/tasks/${task.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -19,7 +19,7 @@ function TaskList({ tasks, refresh }) {
 
   const deleteTask = async (id) => {
 
-    await fetch(`http://localhost:3000/tasks/${id}`, {
+    await fetch(`https://task-manager-ai-assignment-0kdz.onrender.com/tasks/${id}`, {
       method: "DELETE",
     });
 

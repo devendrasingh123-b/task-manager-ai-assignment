@@ -8,8 +8,8 @@ function TaskForm({ refresh }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    await fetch("http://localhost:3000/tasks", {
+// https://task-manager-ai-assignment-0kdz.onrender.com
+    await fetch("https://task-manager-ai-assignment-0kdz.onrender.com/tasks", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
