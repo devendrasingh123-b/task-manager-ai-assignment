@@ -10,7 +10,7 @@ function App() {
   const [filter, setFilter] = useState("all");
 
   const fetchTasks = async (status = "") => {
-    let url = "http://localhost:3000/tasks";
+    let url = "https://task-manager-ai-assignment-0kdz.onrender.com/tasks";
 
     if (status && status !== "all") {
       url += `?status=${status}`;
